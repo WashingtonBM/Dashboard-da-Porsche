@@ -75,3 +75,17 @@ Se quiser, eu posso:
 - listar os arquivos no workspace para confirmar o que será enviado.
 
 Obrigado — quer que eu faça o commit e push agora?
+
+## Arquivos no repositório (raiz)
+
+Lista de arquivos presentes no diretório raiz do workspace (profundidade 2):
+
+- .gitignore
+- 8683bed0-cc33-4e06-bca9-04db9c31f9e2.xlsx
+- ChatGPT Image 19 de jun. de 2026, 20_15_02.png
+- Dashboard Porsch
+- Dashboard Porsch.html
+- README.md
+- index.html
+
+Se quiser que eu remova/ignore arquivos como planilhas ou imagens sensíveis, eu posso adicionar entradas no `.gitignore` e remover do histórico Git quando autorizado.
