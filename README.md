@@ -25,7 +25,7 @@ Abra: http://localhost:8000/index.html
 - Clique com o botão direito em `index.html` e escolha "Open with Live Server"
 
 3) Dashboard criado usando Colab
-- Abra [`index.html` no navegador, mas alguns recursos podem exigir servidor HTTP.](https://colab.research.google.com/drive/16ZED05j9sXO3KVLE4Ys5wK-x8Lsr7Otb#scrollTo=9c02d672&fullscreenOutput=true)
+- Abra (https://colab.research.google.com/drive/16ZED05j9sXO3KVLE4Ys5wK-x8Lsr7Otb#scrollTo=9c02d672&fullscreenOutput=true)
 
 ## Incluir todos os arquivos no repositório (comandos git)
 
