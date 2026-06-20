@@ -12,7 +12,11 @@ Esse repositório contém um dashboard de visualização de vendas da Porsche us
 
 ## Como executar (rápido)
 
-1) Servidor local com Python (recomendado):
+1) Dashboard criado usando Colab
+- Abra [Dashboard Porsch no Colab](https://colab.research.google.com/drive/16ZED05j9sXO3KVLE4Ys5wK-x8Lsr7Otb#scrollTo=9c02d672&fullscreenOutput=true)
+
+
+2) Servidor local com Python (recomendado):
 
 ```bash
 cd /workspaces/Dashboard-da-Porsche
@@ -20,12 +24,10 @@ python3 -m http.server 8000
 ```
 Abra: http://localhost:8000/index.html
 
-2) Usando VS Code Live Server
+3) Usando VS Code Live Server
 - Instale a extensão "Live Server"
 - Clique com o botão direito em `index.html` e escolha "Open with Live Server"
 
-3) Dashboard criado usando Colab
-- Abra [Dashboard Porsch no Colab](https://colab.research.google.com/drive/16ZED05j9sXO3KVLE4Ys5wK-x8Lsr7Otb#scrollTo=9c02d672&fullscreenOutput=true)
 
 ## Incluir todos os arquivos no repositório (comandos git)
 
