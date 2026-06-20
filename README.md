@@ -22,7 +22,6 @@ Esse repositório contém um dashboard de visualização de vendas da Porsche us
 cd /workspaces/Dashboard-da-Porsche
 python3 -m http.server 8000
 ```
-Abra: http://localhost:8000/index.html
 
 3) Usando VS Code Live Server
 - Instale a extensão "Live Server"
