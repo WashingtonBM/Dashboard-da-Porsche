@@ -87,5 +87,3 @@ Lista de arquivos presentes no diretório raiz do workspace (profundidade 2):
 - Dashboard Porsch.html
 - README.md
 - index.html
-
-Se quiser que eu remova/ignore arquivos como planilhas ou imagens sensíveis, eu posso adicionar entradas no `.gitignore` e remover do histórico Git quando autorizado.
