@@ -13,7 +13,7 @@ Esse repositório contém um dashboard de visualização de vendas da Porsche us
 ## Como executar (rápido)
 
 1) Dashboard criado usando Colab
-- Abra [Dashboard Porsch no Colab](https://colab.research.google.com/drive/16ZED05j9sXO3KVLE4Ys5wK-x8Lsr7Otb#scrollTo=9c02d672&fullscreenOutput=true)
+- Abra [o Dashboard Porsch no Colab](https://colab.research.google.com/drive/16ZED05j9sXO3KVLE4Ys5wK-x8Lsr7Otb#scrollTo=9c02d672&fullscreenOutput=true)
 
 
 2) Dasboard criado usando VS Code
