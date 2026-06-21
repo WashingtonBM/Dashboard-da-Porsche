@@ -16,8 +16,8 @@ Esse repositório contém um dashboard de visualização de vendas da Porsche us
 - Abra [Dashboard Porsch no Colab](https://colab.research.google.com/drive/16ZED05j9sXO3KVLE4Ys5wK-x8Lsr7Otb#scrollTo=9c02d672&fullscreenOutput=true)
 
 
-2) Servidor local com Python (recomendado):
-- Abra [Dashboard Porsch in VS Code](https://symmetrical-zebra-g4p5wv4x4r7j2vqx7-5500.app.github.dev/)
+2) Dasboard criado usando VS Code
+- Abra [Painel Porsch in VS Code](https://symmetrical-zebra-g4p5wv4x4r7j2vqx7-5500.app.github.dev/)
 
 ```bash
 cd /workspaces/Dashboard-da-Porsche
