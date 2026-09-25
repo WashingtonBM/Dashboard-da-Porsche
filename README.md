@@ -1,91 +1,46 @@
 # Dashboard Porsche
 
-Esse repositório contém um dashboard de visualização de vendas da Porsche usando HTML, CSS e JavaScript (Plotly.js). O objetivo é fornecer gráficos, KPIs e tabelas interativas para análise rápida.
+Dashboard interativo de vendas da Porsche, construído com HTML, CSS, JavaScript e [Plotly.js](https://plotly.com/javascript/).
 
-## Estrutura do repositório
+## Executar localmente
 
-- `index.html` — Dashboard principal (versão melhorada)
-- `Dashboard Porsch.html` — Versão original/cópia
-- `Dashboard Porsch` — Arquivo adicional presente no workspace
-
-> Observação: verifique os arquivos no diretório raiz e subpastas antes de alterar.
-
-## Como executar (rápido)
-
-1) Dashboard criado usando Colab
-- Abra [o Dashboard Porsch no Colab](https://colab.research.google.com/drive/16ZED05j9sXO3KVLE4Ys5wK-x8Lsr7Otb#scrollTo=9c02d672&fullscreenOutput=true)
-
-
-2) Dasboard criado usando VS Code
-- Abra [o Dashboard Porsch in VS Code](https://symmetrical-zebra-g4p5wv4x4r7j2vqx7-5500.app.github.dev/)
+A aplicação é estática e pode ser executada com qualquer servidor HTTP:
 
 ```bash
-cd /workspaces/Dashboard-da-Porsche
 python3 -m http.server 8000
 ```
 
-3) Usando VS Code Live Server
-- Instale a extensão "Live Server"
-- Clique com o botão direito em `index.html` e escolha "Open with Live Server"
+Depois acesse <http://localhost:8000> e abra `index.html`. Usar um servidor HTTP evita limitações do navegador ao carregar arquivos locais.
 
+## Estrutura atual
 
-## Incluir todos os arquivos no repositório (comandos git)
+- `index.html` — aplicação web principal e ponto de entrada do projeto.
+- `Dashboard_Porsch.ipynb` — notebook de limpeza e preparação dos dados no Colab.
+- `Base de Dados` — arquivo Excel original; mantenha-o como fonte de dados brutos.
+- `README.md` — documentação do projeto.
+- `.gitignore` — arquivos locais e saídas geradas que não devem ser versionados.
+- `docs/` — notas de organização e decisões de manutenção.
 
-Se quiser garantir que todos os arquivos do workspace sejam versionados, execute:
+Arquivos legados e exportações de experimentos permanecem no histórico para preservar rastreabilidade. Novas alterações do dashboard devem ser feitas em `index.html`; não crie uma nova cópia HTML para cada teste.
 
-```bash
-git add .
-git commit -m "Adicionar arquivos do dashboard e implementar README"
-git push origin main
-```
+## Funcionalidades
 
-Se o repositório ainda não tiver remoto configurado, adicione com:
+- KPIs de vendas, receita, ticket médio, cidades e modelos.
+- Filtros por modelo, ano, cidade, forma de pagamento e status de entrega.
+- Gráficos interativos com Plotly.js.
+- Tabela das transações filtradas.
+- Layout responsivo para desktop e telas menores.
 
-```bash
-git remote add origin <URL_DO_REPOSITORIO>
-git push -u origin main
-```
+## Desenvolvimento
 
-## Principais recursos
+Antes de publicar uma alteração:
 
-- KPIs de vendas e receita
-- Gráficos interativos (histórico, distribuição por cidade, top modelos)
-- Filtros por modelo, ano, cidade e método de pagamento
-- Tabela com últimas transações
+1. Execute o dashboard com `python3 -m http.server 8000`.
+2. Teste todos os filtros, inclusive a combinação que não retorna registros.
+3. Confirme no console do navegador que não existem erros JavaScript.
+4. Verifique o layout em uma janela estreita.
+5. Faça um commit pequeno e descritivo.
 
-## Personalização rápida
+## Publicação
 
-- Adicionar/alterar dados: edite a variável `data` nos scripts JavaScript.
-- Cores: ajuste variáveis CSS (ex.: `--color-primary`).
-
-## Problemas comuns & solução rápida
-
-- Se gráficos não carregarem: abra o DevTools (F12) e veja a aba Console.
-- Se estiver usando `file://` e houver erros, rode um servidor HTTP local.
-
-## Próximos passos sugeridos
-
-1. Verificar os arquivos do workspace e confirmar quais devem ser commitados.
-2. Ajustar dados de exemplo para seu conjunto real.
-3. Automatizar build/empacotamento se necessário.
-
----
-
-Se quiser, eu posso:
-- adicionar um `.gitignore` básico;
-- executar os comandos `git add`/`commit`/`push` aqui (se autorizar);
-- listar os arquivos no workspace para confirmar o que será enviado.
-
-Obrigado — quer que eu faça o commit e push agora?
-
-## Arquivos no repositório (raiz)
-
-Lista de arquivos presentes no diretório raiz do workspace (profundidade 2):
-
-- .gitignore
-- 8683bed0-cc33-4e06-bca9-04db9c31f9e2.xlsx
-- ChatGPT Image 19 de jun. de 2026, 20_15_02.png
-- Dashboard Porsch
-- Dashboard Porsch.html
-- README.md
-- index.html
+O dashboard pode ser publicado pelo GitHub Pages usando a branch `main` e a pasta raiz. O arquivo `index.html` deve permanecer na raiz para ser reconhecido como página inicial.
