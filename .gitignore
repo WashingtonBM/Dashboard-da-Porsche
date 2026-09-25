@@ -1,34 +1,54 @@
-# Editor directories and files
+# Editor / IDE
 .vscode/
 .idea/
+*.code-workspace
 
-# Node
+# Node / frontend tooling
 node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
 
 # Python
 __pycache__/
 *.py[cod]
 *.pyo
+*.pyd
 .venv/
 venv/
 env/
+.pytest_cache/
+.mypy_cache/
 
-# macOS
-.DS_Store
+# Jupyter
+.ipynb_checkpoints/
+*.nbconvert.ipynb
 
-# Logs
-logs/
-*.log
-npm-debug.log*
-
-# Env files
+# Environment and secrets
 .env
 .env.*
+!.env.example
 
-# Build
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs and temporary files
+logs/
+*.log
+*.tmp
+*.temp
+*.swp
+*.swo
+
+# Build and generated output
 dist/
 build/
+coverage/
+.cache/
 
-# Others
-*.tmp
-*.swp
+# Generated/sanitized data and local exports
+porsche_database_sanitized.xlsx
+*.bak
+*.backup
